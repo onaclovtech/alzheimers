@@ -51,7 +51,7 @@ public class FullscreenActivity extends Activity implements TextToSpeech.OnInitL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Firebase.setAndroidContext(this);
-        myFirebaseRef = new Firebase("https://onaclovtech-apps.firebaseio.com/alzheimers");
+        myFirebaseRef = new Firebase("");
         setContentView(R.layout.activity_fullscreen);
         final View contentView = findViewById(R.id.fullscreen_content);
         mSystemUiHider = SystemUiHider.getInstance(this, contentView, HIDER_FLAGS);
